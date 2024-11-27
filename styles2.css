@@ -1,0 +1,106 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #6b6868;
+    box-shadow: 0 2px 4px rgba(87, 59, 8, 0.1);
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.logo img {
+    height: 50px;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.services .container, .portfolio .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-card, .portfolio-item {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover, .portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.service-card img, .portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card img:hover, .portfolio-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries para ajustes responsivos adicionales */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .services .container, .portfolio .container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .service-card, .portfolio-item {
+        padding: 10px;
+    }
+
+    .services .container, .portfolio .container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}

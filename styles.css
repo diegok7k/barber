@@ -1,0 +1,142 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fondo Oscuro */
+    color: #fafafa; /* Texto Claro */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c; /* Negro clásico */
+    color: white; /* Texto blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff4b5c; /* Rojo vivo */
+}
+
+.logo img {
+    height: 50px;
+}
+
+.header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.img_banner {
+    max-width: 100%;
+    height: auto;
+}
+
+.services .container, .portfolio .container, .contact .container {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.service-card, .portfolio-item {
+    background-color: #ffffff; /* Blanco clásico */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.service-card:hover, .portfolio-item:hover {
+    transform: scale(1.05);
+}
+
+.service-card h3 {
+    color: #2a9d8f; /* Azul clásico */
+}
+
+.service-card p, .portfolio-item p {
+    color: #264653; /* Azul oscuro */
+}
+
+.servicio_img, .img_m {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.servicio_img:hover, .img_m:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact input, .contact textarea, .contact button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+    background-color: #e76f51; /* Rojo fuerte */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #ff4b5c; /* Rojo vivo */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1c1c1c; /* Negro clásico */
+    color: rgb(255, 255, 255);
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries para ajustes responsivos adicionales */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .service-card, .portfolio-item {
+        padding: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+}
