@@ -1,14 +1,10 @@
---icono: rojo;
-
-.icono: rojo;
-
-rojo{
-  background-color: #ff4b5c; /* Fondo Oscuro */
+:root{
+  --icono: red;
 }
 
 .icono{
-
-  color: var(rojo);
+  
+  color: var(--icono);
 }
 
 body {
