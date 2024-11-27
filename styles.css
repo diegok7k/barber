@@ -6,7 +6,10 @@ rojo{
   background-color: #ff4b5c; /* Fondo Oscuro */
 }
 
+.icono{
 
+  color: var(rojo);
+}
 
 body {
     font-family: 'Roboto', sans-serif;
