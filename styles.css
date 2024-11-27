@@ -1,6 +1,6 @@
---icono: rojo;
-
-.rojo: red;
+rojo{
+  background-color: red; /* Fondo Oscuro */
+}
 
 
 
